@@ -1,0 +1,208 @@
+/* Reset básico para o layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configurações globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container geral */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header-top {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.name-title h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.name-title p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Navegação - Botões retangulares */
+.nav-buttons {
+  margin-top: 50px; /* Adiciona um espaço de 50px entre o cabeçalho e os botões */
+}
+
+.nav-buttons ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centraliza os links */
+}
+
+.nav-buttons li {
+  display: inline-block; /* Exibe os links como blocos inline */
+  margin: 0 10px; /* Espaço entre os botões */
+}
+
+.nav-buttons a {
+  display: inline-block;
+  background-color: #333; /* Cor de fundo preta */
+  color: white;           /* Cor do texto branca */
+  font-size: 1.2em;       /* Tamanho da fonte */
+  padding: 12px 25px;     /* Espaçamento interno (padding) */
+  text-decoration: none;  /* Remove o sublinhado */
+  text-align: center;     /* Alinha o texto no centro */
+  border-radius: 4px;     /* Bordas ligeiramente arredondadas */
+  transition: background-color 0.3s, transform 0.3s ease; /* Transição suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.nav-buttons a:hover {
+  background-color: #0073e6; /* Muda a cor de fundo no hover */
+  transform: scale(1.05);     /* Aumenta o botão um pouco ao passar o mouse */
+}
+
+.nav-buttons a:active {
+  transform: scale(0.95);  /* Diminui o botão ao clicar (efeito de "pressionar") */
+}
+
+/* Seções */
+section {
+  padding: 40px 0;
+  background-color: #fff;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+section ul li {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Descrição de projetos */
+.project-description {
+  margin-bottom: 20px;
+}
+
+.project-description h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 1em; /* Diminuindo o tamanho da fonte da descrição */
+  color: #555;
+}
+
+/* Links de projetos com ícones e texto */
+.projects-links ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  text-align: center; /* Garante que os links estejam centralizados */
+}
+
+.projects-links li {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.project-link i {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.project-link:hover {
+  color: #0073e6; /* Cor ao passar o mouse */
+}
+
+.project-link:active {
+  transform: scale(0.95); /* Efeito ao clicar */
+}
+
+/* Estilos para WhatsApp e telefone */
+.whatsapp a, .phone-link {
+  text-decoration: none;
+  color: #25D366;
+  font-size: 1.2em;
+}
+
+.phone-link {
+  color: #333;
+}
+
+.phone-link i, .whatsapp i {
+  margin-right: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #000;     /* Cor de fundo preta */
+  color: white;               /* Cor do texto branca */
+  padding: 20px 0;            /* Espaçamento acima e abaixo */
+  text-align: center;         /* Centraliza o conteúdo */
+}
+
+footer p {
+  font-size: 1.5em;           /* Aumenta o tamanho da fonte do rodapé */
+  margin: 0;                  /* Remove margens extras */
+}
+
+/* Adicionando um hover suave no link do telefone */
+.phone-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.phone-link:hover {
+  color: #0073e6;             /* Cor ao passar o mouse */
+}
